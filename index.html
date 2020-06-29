@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader - Materialize CSS | Arturo Ruiz</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+<div id="circulo" class="center section">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="hide" id="contenido">
+<br>
+<h4 class="center blue-text">Este Es Un Preloader Con Materialize CSS Por Arturo Ruiz</h4>
+<hr>
+<br>
+<div class="center">
+    <iframe width="720" height="560" src="https://www.youtube.com/embed/EdtDlwqxQwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+
+
+
+<script>
+    window.addEventListener('load', ()=>{
+        setTimeout(20000);
+
+        document.getElementById('contenido').className = 'animated fadeInDown';
+
+        document.getElementById('circulo').className = 'hide';
+
+    })
+</script>
+
+</body>
+</html>
